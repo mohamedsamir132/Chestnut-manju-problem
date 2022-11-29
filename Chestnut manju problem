@@ -1,0 +1,17 @@
+[Problem] The day chestnut manju covers the solar system
+
+def minn_time(vol_thing):  #volume_solar_system=2*pow(10,30)/m^3
+  vol_chestnut = 0.000014  #volume of chestnut buns = 140m^3
+  v = 1
+  sum_time = 0
+  while v > 0:
+    vol_chestnut = vol_chestnut*2
+    v = vol_thing - vol_chestnut
+    sum_time = sum_time + 5
+  return sum_time
+min_time = minn_time(2*pow(10,30))
+print("{} minuts later chestnut buns will cover solar system".format(min_time))
+
+voll_Dome = 1240000  #volume of Tokyo Dome
+minn_Dome = minn_time(voll_Dome)
+print("{} minuts later chestnut buns will cover Tokyo Dome".format(minn_Dome))
